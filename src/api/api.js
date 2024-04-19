@@ -2,7 +2,8 @@
 import axios from "axios";
 
 // const BACKEND_ENDPOINT = "http://localhost:3000/api";
-const BACKEND_ENDPOINT = "https://chittychittybangbang.onrender.com/api";
+// const BACKEND_ENDPOINT = "https://chittychittybangbang.onrender.com/api";
+const BACKEND_ENDPOINT = "https://assignment-githubexplorer-server-1.onrender.com";
 
 //================================>save-user or search if already exist<==============
 
