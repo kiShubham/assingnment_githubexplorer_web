@@ -1,15 +1,19 @@
 /* eslint-disable no-unused-vars */
 import axios from "axios";
 
-// const BACKEND_ENDPOINT = "http://localhost:3000/api";
-// const BACKEND_ENDPOINT = "https://chittychittybangbang.onrender.com/api";
-const BACKEND_ENDPOINT = "https://assignment-githubexplorer-server-1.onrender.com";
+// const BACKEND_ENDPOINT = "http://localhost:3000/";
+// const BACKEND_ENDPOINT = "https://chittychittybangbang.onrender.com/";
+// const BACKEND_ENDPOINT = "https://assignment-githubexplorer-server-1.onrender.com";
+const BACKEND_ENDPOINT =
+  "https://assignment-githubexplorer-server.onrender.com";
 
 //================================>save-user or search if already exist<==============
 
 export const fetchuser = async (username) => {
   try {
-    const res = await axios.get(`${BACKEND_ENDPOINT}/save-user/${username}`);
+    const res = await axios.get(
+      `${BACKEND_ENDPOINT}/api/save-user/${username}`
+    );
     // console.log(res);
     return res.data;
   } catch (error) {
